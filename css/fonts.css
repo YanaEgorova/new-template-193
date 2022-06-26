@@ -1,0 +1,44 @@
+
+@font-face {
+    font-family: 'Josefin Sans Bold';
+    src: url('../fonts/JosefinSans-Bold.eot');
+    src: url('../fonts/JosefinSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/JosefinSans-Bold.woff2') format('woff2'),
+        url('../fonts/JosefinSans-Bold.woff') format('woff'),
+        url('../fonts/JosefinSans-Bold.ttf') format('truetype'),
+        url('../fonts/JosefinSans-Bold.svg#JosefinSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('../fonts/JosefinSans-Light.eot');
+    src: url('../fonts/JosefinSans-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/JosefinSans-Light.woff2') format('woff2'),
+        url('../fonts/JosefinSans-Light.woff') format('woff'),
+        url('../fonts/JosefinSans-Light.ttf') format('truetype'),
+        url('../fonts/JosefinSans-Light.svg#JosefinSans-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Josefin Sans Medium';
+    src: url('../fonts/JosefinSans-Medium.eot');
+    src: url('../fonts/JosefinSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/JosefinSans-Medium.woff2') format('woff2'),
+        url('../fonts/JosefinSans-Medium.woff') format('woff'),
+        url('../fonts/JosefinSans-Medium.ttf') format('truetype'),
+        url('../fonts/JosefinSans-Medium.svg#JosefinSans-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+

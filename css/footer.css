@@ -1,0 +1,105 @@
+.footer__wrapper {
+  position: relative;
+  border-top: .3rem solid var(--second-brand-color);
+  overflow: hidden;
+}
+.footer__bottom {
+  padding: 2rem 0;
+}
+.footer__logo {
+  color: var(--main-text-color);
+  display: block;
+  margin-bottom: 1rem;
+}
+.footer__subtitle {
+  margin-bottom: 2rem;
+  font-family: var(--title-font);
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.footer__title {
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+.footer__icon {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+}
+
+.footer .list, .footer .sub-list {
+  margin-bottom: 4rem;
+}
+.footer__link, .footer .text {
+  font-size: 1.8rem;
+  position: relative;
+}
+.footer__link::after {
+  display: block;
+  content: '';
+  bottom: -.1rem;
+  left: 0;
+  position: absolute;
+  height: 0.1rem;
+  width: 0;
+  background-color: var(--main-text-color);
+  transition: all 0.3s ease-in-out;
+}
+.footer .text--mb {
+  margin-bottom: 1rem;
+}
+.footer__span {
+  font-size: 1.4rem;
+}
+.item--df svg {
+  width: 3rem;
+  min-width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+}
+.footer__policies {
+  padding-top: 2rem;
+  margin-bottom: 4rem;
+}
+.footer .item:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+.footer .list-col {
+  margin-bottom: 4rem;
+}
+
+.footer__block--rg {
+  max-width: 40rem;
+}
+
+.footer__bottom {
+  background-color: var(--first-brand-color);
+}
+
+@media screen and (min-width: 1024px) {
+  .footer__link:hover::after {
+    width: 100%;
+  }
+  .footer__policies {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer .sub-list {
+    margin-bottom: 0;
+  }
+  .sub-list--df {
+    text-align: right;
+  }
+  .footer__block--rg {
+    text-align: right;
+  }
+  .footer__block--df {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

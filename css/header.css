@@ -1,0 +1,136 @@
+.header__wrapper {
+    position: relative;
+}
+body.open-menu {
+    overflow: hidden;
+}
+.header__wrapper-top {
+    background-color: var(--first-brand-color);
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+.header {
+    padding: 1.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    font-size: 1.6rem;
+    font-family: var(--title-font);
+    color: #fff;
+    z-index: 10;
+}
+.header__btn {
+    width: 4rem;
+    height: 4rem;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+    border: .3rem solid var(--main-text-color);
+}
+.header__btn span {
+    width: 80%;
+    height: .2rem;
+    margin: 0 auto;
+    display: block;
+    background-color: var(--main-text-color);
+    position: relative;
+}
+.header__btn span::before, .header__btn span::after {
+    width: 50%;
+    height: .2rem;
+    content: '';
+    display: block;
+    background-color: var(--main-text-color);
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+.header__btn span::before {
+    top: -.6rem;
+}
+.header__btn span::after {
+    bottom: -.6rem;
+    width: 70%;
+}
+.nav {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background-color: var(--main-bg-color);
+    width: 100%; 
+    height: 100%;
+    min-height: 100vh;
+    z-index: 9;
+    overflow: hidden;
+    visibility: hidden;
+    transition: all 0.6s ease-in-out;
+}
+.nav__list {
+    max-width: 120rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15rem 1.6rem;
+    opacity: 0;
+    transition-delay: .6s;
+    transition-duration: .4s;
+    transition-timing-function: ease;
+    transition-property: opacity;
+}
+.nav__item:not(:last-child) {
+    margin-bottom: 3rem;
+}
+.nav__link {
+    color: #000;
+    font-size: 1.4rem;
+}
+.nav.open-menu {
+    left: 0;
+    visibility: visible;
+}
+.open-menu .nav__list {
+    opacity: 1;
+}
+.cart__btn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.cart__btn svg {
+    width: 3rem;
+    display: block;
+    margin-right: 1rem;
+}
+.cart__btn .cart__span {
+    font-size: 2.2rem;
+    font-family: var(--title-font);
+}
+@media screen and (min-width: 1024px) {
+    .logo {
+        font-size: 1.8rem;
+    }
+  
+    .nav__link {
+        position: relative;
+    }
+    .nav__link::after {
+        display: block;
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 0;
+        height: 0.1rem;
+        background-color: #000;
+        bottom: -.3rem;
+        transition: all .3s ease-in-out;
+    }
+    .nav__link:hover::after {
+        width: 100%;
+    }
+
+    .header__btn:hover span::before, .header__btn:hover span::after {
+       width: 150%; 
+    }
+}
