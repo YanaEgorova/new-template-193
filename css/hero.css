@@ -14,6 +14,10 @@
     background-color: var(--main-bg-color);
     padding: 1rem .5rem;
 }
+.hero .text {
+        background-color: var(--main-bg-color);
+    padding: 1rem .5rem;
+}
 .hero .btn {
     margin-bottom: 3rem;
 }
